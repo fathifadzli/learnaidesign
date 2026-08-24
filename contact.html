@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Book A Demo — PrimeStay Real Estate CRM</title>
+  <meta name="description" content="Get in touch with the PrimeStay team. Schedule a custom 1-on-1 demo, contact our 24/7 technical support, or explore enterprise real estate partnerships.">
+  <meta name="keywords" content="Contact PrimeStay, Book PropTech Demo, Real Estate Support, Property Management Consultation, Sales Inquiry">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Contact PrimeStay — Connect with PropTech Specialists">
+  <meta property="og:description" content="Schedule a live demo or speak with our solutions engineering team today.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts: Plus Jakarta Sans & Instrument Serif -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
+
+  <!-- Alpine JS -->
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       Header & Navigation
+       ======================================================================== -->
+  <header class="header" id="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="PrimeStay Home">
+        <div class="logo-badge">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+          </svg>
+        </div>
+        <span>PrimeStay</span>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="portfolio.html" class="nav-link">Case Studies</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="contact.html" class="btn btn-secondary btn-sm" id="nav-demo-btn">Book A Demo</a>
+        <a href="services.html" class="btn btn-primary btn-sm" id="nav-start-btn">Get Started</a>
+      </div>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       Page Hero & Breadcrumb
+       ======================================================================== -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="breadcrumb-separator">/</span>
+        <span class="breadcrumb-current">Contact & Demo</span>
+      </div>
+
+      <div class="badge-pill white-glass" style="margin: 0 auto 16px;">
+        <span class="sparkle">✦</span>
+        <span>We're Here to Help</span>
+      </div>
+
+      <h1 class="page-hero-title">
+        <span class="serif-italic">Let's Build</span> Your Smarter Property Ecosystem
+      </h1>
+
+      <p class="page-hero-desc">
+        Schedule a personalized 1-on-1 walkthrough tailored to your exact portfolio size, or connect directly with our 24/7 technical team.
+      </p>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Main Contact 2-Column Split
+       ======================================================================== -->
+  <section class="section" style="padding-top: 20px;">
+    <div class="container">
+      <div class="contact-split-grid">
+        
+        <!-- Left: Interactive Form -->
+        <div style="background: #FFFFFF; border: 1px solid var(--color-border-subtle); border-radius: var(--radius-2xl); padding: 40px; box-shadow: var(--shadow-floating);">
+          <div style="margin-bottom: 28px;">
+            <div class="badge-pill" style="margin-bottom: 10px;">
+              <span class="sparkle">✦</span>
+              <span>Priority Consultation</span>
+            </div>
+            <h3 style="font-size: 1.6rem; color: var(--color-text-primary); margin-bottom: 6px;">Schedule Your Live Walkthrough</h3>
+            <p style="color: var(--color-text-secondary); font-size: 0.9375rem;">Fill out the brief form below and our solutions engineer will configure a customized test environment for you.</p>
+          </div>
+
+          <form id="contactFormPage" class="contact-form">
+            <div class="form-grid">
+              <div class="form-group">
+                <label class="form-label" for="contactFirstName">First Name *</label>
+                <input type="text" id="contactFirstName" class="form-input" placeholder="Sarah" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="contactLastName">Last Name *</label>
+                <input type="text" id="contactLastName" class="form-input" placeholder="Jenkins" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="contactEmail">Work Email *</label>
+                <input type="email" id="contactEmail" class="form-input" placeholder="sarah@realestateagency.com" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="contactPhone">Phone Number</label>
+                <input type="tel" id="contactPhone" class="form-input" placeholder="+1 (555) 019-2834">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="contactPortfolio">Portfolio Size *</label>
+                <select id="contactPortfolio" class="form-select" required>
+                  <option value="" disabled selected>Select number of units</option>
+                  <option value="1-10">1 – 10 Units (Independent Landlord)</option>
+                  <option value="11-50">11 – 50 Units (Growing Portfolio)</option>
+                  <option value="51-200">51 – 200 Units (Property Management Agency)</option>
+                  <option value="200+">200+ Units (Enterprise REIT / Commercial)</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="contactGoal">Primary Objective *</label>
+                <select id="contactGoal" class="form-select" required>
+                  <option value="" disabled selected>What is your main focus?</option>
+                  <option value="rent">Automate Next-Day Rent & Accounting</option>
+                  <option value="maintenance">Deploy AI Maintenance Dispatch</option>
+                  <option value="screening">Instant Tenant Screening & Leases</option>
+                  <option value="migration">Full Software Migration from Legacy Tool</option>
+                </select>
+              </div>
+              <div class="form-group full-width">
+                <label class="form-label" for="contactTimeSlot">Preferred Demo Date & Time</label>
+                <input type="datetime-local" id="contactTimeSlot" class="form-input">
+              </div>
+              <div class="form-group full-width">
+                <label class="form-label" for="contactMessage">How can PrimeStay best help your business?</label>
+                <textarea id="contactMessage" class="form-textarea" placeholder="Tell us about your current challenges (e.g. rent reconciliation delays, contractor costs, multi-entity owner reporting)..."></textarea>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-lg" style="width: 100%; margin-top: 12px;">
+              <span>Confirm Priority Demo Booking</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </button>
+            <div style="font-size: 0.75rem; color: var(--color-text-tertiary); text-align: center; margin-top: 12px;">
+              🔒 100% confidential. No spam. Instant calendar invite will be emailed to you.
+            </div>
+          </form>
+        </div>
+
+        <!-- Right: Department Directory & Global Hubs -->
+        <div>
+          
+          <!-- Department Directory Cards -->
+          <div class="dept-cards-grid">
+            <div class="dept-card">
+              <div class="dept-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              </div>
+              <h4 style="font-size: 1.05rem; margin-bottom: 4px; color: var(--color-text-primary);">Sales & Demos</h4>
+              <p style="font-size: 0.8125rem; color: var(--color-text-secondary); margin-bottom: 8px;">Explore custom pricing and portfolio plans.</p>
+              <a href="mailto:sales@primestay.io" style="font-size: 0.875rem; color: var(--color-primary); font-weight: 600;">sales@primestay.io</a>
+            </div>
+
+            <div class="dept-card">
+              <div class="dept-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+              </div>
+              <h4 style="font-size: 1.05rem; margin-bottom: 4px; color: var(--color-text-primary);">24/7 Technical Support</h4>
+              <p style="font-size: 0.8125rem; color: var(--color-text-secondary); margin-bottom: 8px;">Dedicated assistance for active customers.</p>
+              <a href="mailto:support@primestay.io" style="font-size: 0.875rem; color: var(--color-primary); font-weight: 600;">support@primestay.io</a>
+            </div>
+
+            <div class="dept-card">
+              <div class="dept-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+              </div>
+              <h4 style="font-size: 1.05rem; margin-bottom: 4px; color: var(--color-text-primary);">Partnerships & Integrations</h4>
+              <p style="font-size: 0.8125rem; color: var(--color-text-secondary); margin-bottom: 8px;">Connect IoT hardware and API ecosystems.</p>
+              <a href="mailto:partners@primestay.io" style="font-size: 0.875rem; color: var(--color-primary); font-weight: 600;">partners@primestay.io</a>
+            </div>
+
+            <div class="dept-card">
+              <div class="dept-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </div>
+              <h4 style="font-size: 1.05rem; margin-bottom: 4px; color: var(--color-text-primary);">Press & Analysts</h4>
+              <p style="font-size: 0.8125rem; color: var(--color-text-secondary); margin-bottom: 8px;">Media kits, data briefings & interviews.</p>
+              <a href="mailto:press@primestay.io" style="font-size: 0.875rem; color: var(--color-primary); font-weight: 600;">press@primestay.io</a>
+            </div>
+          </div>
+
+          <!-- Response Guarantee Callout -->
+          <div style="display: flex; align-items: center; gap: 14px; background: #ECFDF5; border: 1px solid #A7F3D0; border-radius: var(--radius-lg); padding: 16px 20px; margin-bottom: 24px;">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2.2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+            <div>
+              <div style="font-weight: 700; color: #065F46; font-size: 0.9375rem;">Fast Response Guarantee</div>
+              <div style="font-size: 0.8125rem; color: #047857;">Average live agent response time is under 4 minutes during operating hours.</div>
+            </div>
+          </div>
+
+          <!-- Global Offices -->
+          <h4 style="font-size: 1.15rem; color: var(--color-text-primary); margin-bottom: 14px;">Global Regional Hubs</h4>
+          
+          <div class="office-card">
+            <div class="office-flag">🇺🇸</div>
+            <div>
+              <div style="font-weight: 700; color: var(--color-text-primary); font-size: 0.9375rem;">San Francisco HQ (Americas)</div>
+              <div style="font-size: 0.8125rem; color: var(--color-text-secondary); margin-top: 2px;">500 Howard Street, Suite 400, San Francisco, CA 94105</div>
+              <div style="font-size: 0.75rem; color: var(--color-text-tertiary); margin-top: 4px;">Timezone: Pacific Time (PST/PDT) • +1 (888) 724-6391</div>
+            </div>
+          </div>
+
+          <div class="office-card">
+            <div class="office-flag">🇬🇧</div>
+            <div>
+              <div style="font-weight: 700; color: var(--color-text-primary); font-size: 0.9375rem;">London Operations Hub (EMEA)</div>
+              <div style="font-size: 0.8125rem; color: var(--color-text-secondary); margin-top: 2px;">25 Bank Street, Canary Wharf, London, E14 5JP</div>
+              <div style="font-size: 0.75rem; color: var(--color-text-tertiary); margin-top: 4px;">Timezone: Greenwich Mean Time (GMT/BST) • +44 20 7946 0912</div>
+            </div>
+          </div>
+
+          <div class="office-card">
+            <div class="office-flag">🇸🇬</div>
+            <div>
+              <div style="font-weight: 700; color: var(--color-text-primary); font-size: 0.9375rem;">Singapore Tech Center (APAC)</div>
+              <div style="font-size: 0.8125rem; color: var(--color-text-secondary); margin-top: 2px;">1 Marina Boulevard, #28-00, Singapore 018989</div>
+              <div style="font-size: 0.75rem; color: var(--color-text-tertiary); margin-top: 4px;">Timezone: Singapore Standard Time (SGT) • +65 6712 3890</div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Global Footprint Graphic
+       ======================================================================== -->
+  <section class="section section-bg-subtle">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge-pill">
+          <span class="sparkle">✦</span>
+          <span>Worldwide Presence</span>
+        </div>
+        <h2 class="section-title">
+          Powering Properties <span class="serif-italic">Across 48 Countries</span>
+        </h2>
+        <p class="section-subtitle">
+          From North America and Western Europe to the Asia-Pacific corridor, PrimeStay handles multi-currency, localized tax compliance, and multi-language tenant portals.
+        </p>
+      </div>
+
+      <div style="border-radius: var(--radius-2xl); overflow: hidden; box-shadow: var(--shadow-md); border: 1px solid var(--color-border-subtle);">
+        <img src="https://placehold.co/1200x700?text=PrimeStay+Global+Operations+Infrastructure+Map" alt="PrimeStay Global Operations Footprint" style="width: 100%; height: auto;">
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Footer
+       ======================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo" style="color: #FFFFFF;">
+            <div class="logo-badge">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              </svg>
+            </div>
+            <span>PrimeStay</span>
+          </a>
+          <p>
+            The intelligent real estate CRM & property management ecosystem built for modern landlords, leasing teams, and property managers worldwide.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="social-link" aria-label="Twitter / X"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+            <a href="#" class="social-link" aria-label="LinkedIn"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.64 1.64 0 1 0 0-3.28 1.64 1.64 0 0 0 0 3.28m1.4 9.74V9.97H5.06v8.53h2.8z"/></svg></a>
+            <a href="#" class="social-link" aria-label="YouTube"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M10 15l5.19-3L10 9v6m11.56-7.83c.13.47.22 1.1.28 1.9.07.8.1 1.49.1 2.09L22 12c0 2.19-.16 3.8-.44 4.83-.25.9-.83 1.48-1.73 1.73-.47.13-1.33.22-2.65.28-1.3.07-2.49.1-3.59.1L12 5c4.19 0 6.8.16 7.83.44.9.25 1.48.83 1.73 1.73z"/></svg></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h5>Platform</h5>
+          <div class="footer-links">
+            <a href="services.html" class="footer-link">Rent Automation</a>
+            <a href="services.html" class="footer-link">Tenant Screening</a>
+            <a href="services.html" class="footer-link">AI Maintenance</a>
+            <a href="services.html" class="footer-link">Portfolio P&L</a>
+            <a href="services.html" class="footer-link">Resident Portal</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h5>Company</h5>
+          <div class="footer-links">
+            <a href="about.html" class="footer-link">About PrimeStay</a>
+            <a href="portfolio.html" class="footer-link">Case Studies</a>
+            <a href="portfolio-single.html" class="footer-link">Featured Story</a>
+            <a href="blog.html" class="footer-link">Blog & News</a>
+            <a href="contact.html" class="footer-link">Careers <span style="font-size: 0.7rem; color: #38BDF8; font-weight: 700;">WE'RE HIRING</span></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h5>Resources</h5>
+          <div class="footer-links">
+            <a href="services.html" class="footer-link">Feature Matrix</a>
+            <a href="blog-single.html" class="footer-link">Latest Research</a>
+            <a href="contact.html" class="footer-link">Help Center</a>
+            <a href="contact.html" class="footer-link">Security & SOC2</a>
+            <a href="contact.html" class="footer-link">Book Consultation</a>
+          </div>
+        </div>
+
+        <div class="footer-col footer-newsletter">
+          <h5>Stay Updated</h5>
+          <p>Get monthly property management strategies and market insights delivered to your inbox.</p>
+          <form class="newsletter-form" id="newsletterFormContact">
+            <input type="email" class="newsletter-input" placeholder="Your work email..." required>
+            <button type="submit" class="btn btn-primary btn-sm">Join</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 PrimeStay Technologies Inc. All rights reserved.</div>
+        <div style="display: flex; gap: 20px;">
+          <a href="#" class="footer-link">Privacy Policy</a>
+          <a href="#" class="footer-link">Terms of Service</a>
+          <a href="#" class="footer-link">Security Disclosures</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- Interactive JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>

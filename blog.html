@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog & Insights — PrimeStay PropTech Journal</title>
+  <meta name="description" content="Read the latest real estate proptech insights, property management playbooks, AI maintenance strategies, and landlord tax guides from the PrimeStay team.">
+  <meta name="keywords" content="Real Estate Blog, Property Management Tips, PropTech Trends 2026, AI Maintenance, Landlord Accounting Guides">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="PrimeStay Blog & Insights — Modern Real Estate Intelligence">
+  <meta property="og:description" content="Tactics, frameworks, and case studies for scaling high-yield rental portfolios.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts: Plus Jakarta Sans & Instrument Serif -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
+
+  <!-- Alpine JS -->
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       Header & Navigation
+       ======================================================================== -->
+  <header class="header" id="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="PrimeStay Home">
+        <div class="logo-badge">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+          </svg>
+        </div>
+        <span>PrimeStay</span>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="portfolio.html" class="nav-link">Case Studies</a>
+        <a href="blog.html" class="nav-link active">Blog</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="contact.html" class="btn btn-secondary btn-sm" id="nav-demo-btn">Book A Demo</a>
+        <a href="services.html" class="btn btn-primary btn-sm" id="nav-start-btn">Get Started</a>
+      </div>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       Page Hero & Breadcrumb
+       ======================================================================== -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="breadcrumb-separator">/</span>
+        <span class="breadcrumb-current">Insights & Blog</span>
+      </div>
+
+      <div class="badge-pill white-glass" style="margin: 0 auto 16px;">
+        <span class="sparkle">✦</span>
+        <span>The PropTech Intelligence Journal</span>
+      </div>
+
+      <h1 class="page-hero-title">
+        <span class="serif-italic">Knowledge & Tactics</span> for Modern Real Estate Leaders
+      </h1>
+
+      <p class="page-hero-desc">
+        Actionable playbooks, regulatory briefings, and algorithmic strategies to maximize property yield and automate resident operations.
+      </p>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Blog Content & Filtering
+       ======================================================================== -->
+  <section class="section" x-data="{ currentCategory: 'all', searchQuery: '' }">
+    <div class="container">
+
+      <!-- Spotlight Hero Article -->
+      <div class="blog-spotlight-card" x-show="currentCategory === 'all' && searchQuery === ''">
+        <div class="blog-spotlight-img">
+          <img src="https://placehold.co/1200x700?text=Autonomous+AI+Agents+in+Property+Management" alt="AI in Property Management">
+          <div style="position: absolute; top: 20px; left: 20px;">
+            <span class="badge-pill" style="background: rgba(15, 23, 42, 0.8); color: #FFFFFF; border-color: rgba(255,255,255,0.2);">
+              <span class="sparkle" style="color: #38BDF8;">✦</span>
+              <span>Editor's Spotlight</span>
+            </span>
+          </div>
+        </div>
+        <div class="blog-spotlight-content">
+          <div style="display: flex; gap: 12px; align-items: center; margin-bottom: 12px; font-size: 0.8125rem; color: var(--color-text-tertiary);">
+            <span style="color: var(--color-primary); font-weight: 700; text-transform: uppercase;">PropTech & AI</span>
+            <span>•</span>
+            <span>7 min read</span>
+            <span>•</span>
+            <span>Feb 18, 2026</span>
+          </div>
+          <h2 style="font-size: clamp(1.5rem, 2.5vw, 1.85rem); margin-bottom: 14px; color: var(--color-text-primary); line-height: 1.25;">
+            <a href="blog-single.html" style="color: inherit;">
+              How Autonomous AI Agents Are Transforming Property Maintenance & Tenant Retention in 2026
+            </a>
+          </h2>
+          <p style="color: var(--color-text-secondary); font-size: 0.9375rem; line-height: 1.6; margin-bottom: 24px;">
+            Explore how modern operators are deploying computer vision diagnostic models to triage emergency repair work orders, cut contractor costs by 54%, and achieve 98%+ resident satisfaction.
+          </p>
+          <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px;">
+            <div style="display: flex; align-items: center; gap: 12px;">
+              <img src="https://placehold.co/200x200?text=Dr.+Chen" alt="Dr. Sophia Chen" style="width: 40px; height: 40px; border-radius: 50%; object-fit: cover;">
+              <div>
+                <div style="font-size: 0.875rem; font-weight: 700; color: var(--color-text-primary);">Dr. Sophia Chen</div>
+                <div style="font-size: 0.75rem; color: var(--color-text-tertiary);">VP of AI Engineering</div>
+              </div>
+            </div>
+            <a href="blog-single.html" class="btn btn-primary btn-sm">
+              <span>Read Full Story</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Controls: Category Pills & Search -->
+      <div class="blog-controls">
+        <div class="filter-pills-row">
+          <button class="filter-pill-btn" :class="{ 'active': currentCategory === 'all' }" @click="currentCategory = 'all'">All Posts</button>
+          <button class="filter-pill-btn" :class="{ 'active': currentCategory === 'proptech' }" @click="currentCategory = 'proptech'">PropTech & AI</button>
+          <button class="filter-pill-btn" :class="{ 'active': currentCategory === 'finance' }" @click="currentCategory = 'finance'">Finance & Cashflow</button>
+          <button class="filter-pill-btn" :class="{ 'active': currentCategory === 'operations' }" @click="currentCategory = 'operations'">Operations</button>
+          <button class="filter-pill-btn" :class="{ 'active': currentCategory === 'legal' }" @click="currentCategory = 'legal'">Legal & Compliance</button>
+        </div>
+
+        <div class="blog-search-box">
+          <svg class="blog-search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <input type="text" class="blog-search-input" placeholder="Search insights..." x-model="searchQuery">
+        </div>
+      </div>
+
+      <!-- Article Grid -->
+      <div class="blog-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 32px;">
+        
+        <!-- Post 1 -->
+        <article class="service-card-deep" style="padding: 0; overflow: hidden;" x-show="(currentCategory === 'all' || currentCategory === 'finance') && ('The Landlord Complete Guide to Automated Rent Collection'.toLowerCase().includes(searchQuery.toLowerCase()))">
+          <div style="height: 200px; overflow: hidden; background: #F1F5F9;">
+            <img src="https://placehold.co/400x300?text=Automated+Rent+Collection+2026" alt="Automated Rent Collection" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <div style="padding: 28px; display: flex; flex-direction: column; flex-grow: 1;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+              <span class="badge-pill" style="font-size: 0.75rem; padding: 3px 10px;">Finance & Cashflow</span>
+              <span style="font-size: 0.75rem; color: var(--color-text-tertiary);">5 min read</span>
+            </div>
+            <h3 style="font-size: 1.2rem; margin-bottom: 10px; line-height: 1.35;">
+              <a href="blog-single.html" style="color: var(--color-text-primary);">The Landlord's Complete Guide to Automated Rent & Split Disbursements</a>
+            </h3>
+            <p style="color: var(--color-text-secondary); font-size: 0.875rem; line-height: 1.6; margin-bottom: 20px;">
+              Discover how instant ACH rails eliminate grace period delays, enforce automated late rules, and distribute net returns to multi-investor entities.
+            </p>
+            <div style="margin-top: auto; display: flex; justify-content: space-between; align-items: center; padding-top: 14px; border-top: 1px solid var(--color-border-subtle);">
+              <span style="font-size: 0.8125rem; font-weight: 600; color: var(--color-text-primary);">Marcus Sterling</span>
+              <span style="font-size: 0.8125rem; color: var(--color-primary); font-weight: 600;">Read Article →</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Post 2 -->
+        <article class="service-card-deep" style="padding: 0; overflow: hidden;" x-show="(currentCategory === 'all' || currentCategory === 'operations') && ('Tenant Retention Masterclass 5 Data Driven Strategies'.toLowerCase().includes(searchQuery.toLowerCase()))">
+          <div style="height: 200px; overflow: hidden; background: #F1F5F9;">
+            <img src="https://placehold.co/400x300?text=Tenant+Retention+Masterclass" alt="Tenant Retention Strategies" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <div style="padding: 28px; display: flex; flex-direction: column; flex-grow: 1;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+              <span class="badge-pill" style="font-size: 0.75rem; padding: 3px 10px;">Operations</span>
+              <span style="font-size: 0.75rem; color: var(--color-text-tertiary);">6 min read</span>
+            </div>
+            <h3 style="font-size: 1.2rem; margin-bottom: 10px; line-height: 1.35;">
+              <a href="blog-single.html" style="color: var(--color-text-primary);">Tenant Retention: 5 Data-Driven Strategies to Maximize Lease Renewals</a>
+            </h3>
+            <p style="color: var(--color-text-secondary); font-size: 0.875rem; line-height: 1.6; margin-bottom: 20px;">
+              Why unit turnover is the single highest expense in multifamily operations, and how automated communication cycles protect your Net Operating Income.
+            </p>
+            <div style="margin-top: auto; display: flex; justify-content: space-between; align-items: center; padding-top: 14px; border-top: 1px solid var(--color-border-subtle);">
+              <span style="font-size: 0.8125rem; font-weight: 600; color: var(--color-text-primary);">Elena Vance</span>
+              <span style="font-size: 0.8125rem; color: var(--color-primary); font-weight: 600;">Read Article →</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Post 3 -->
+        <article class="service-card-deep" style="padding: 0; overflow: hidden;" x-show="(currentCategory === 'all' || currentCategory === 'proptech') && ('Smart Lock Integration How Keyless Access Cuts Vacancy'.toLowerCase().includes(searchQuery.toLowerCase()))">
+          <div style="height: 200px; overflow: hidden; background: #F1F5F9;">
+            <img src="https://placehold.co/400x300?text=Smart+Lock+Keyless+Access" alt="Smart Lock Keyless Access" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <div style="padding: 28px; display: flex; flex-direction: column; flex-grow: 1;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+              <span class="badge-pill" style="font-size: 0.75rem; padding: 3px 10px;">PropTech & AI</span>
+              <span style="font-size: 0.75rem; color: var(--color-text-tertiary);">4 min read</span>
+            </div>
+            <h3 style="font-size: 1.2rem; margin-bottom: 10px; line-height: 1.35;">
+              <a href="blog-single.html" style="color: var(--color-text-primary);">Smart Lock Integration: How Keyless Access Cuts Vacancy Days by 40%</a>
+            </h3>
+            <p style="color: var(--color-text-secondary); font-size: 0.875rem; line-height: 1.6; margin-bottom: 20px;">
+              Self-guided tours and dynamic vendor PIN codes are speeding up lease turnovers while maintaining impenetrable building security.
+            </p>
+            <div style="margin-top: auto; display: flex; justify-content: space-between; align-items: center; padding-top: 14px; border-top: 1px solid var(--color-border-subtle);">
+              <span style="font-size: 0.8125rem; font-weight: 600; color: var(--color-text-primary);">Dr. Sophia Chen</span>
+              <span style="font-size: 0.8125rem; color: var(--color-primary); font-weight: 600;">Read Article →</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Post 4 -->
+        <article class="service-card-deep" style="padding: 0; overflow: hidden;" x-show="(currentCategory === 'all' || currentCategory === 'legal') && ('Fair Housing Algorithmic Compliance in Tenant Screening'.toLowerCase().includes(searchQuery.toLowerCase()))">
+          <div style="height: 200px; overflow: hidden; background: #F1F5F9;">
+            <img src="https://placehold.co/400x300?text=Fair+Housing+Compliance" alt="Fair Housing Compliance" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <div style="padding: 28px; display: flex; flex-direction: column; flex-grow: 1;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+              <span class="badge-pill" style="font-size: 0.75rem; padding: 3px 10px;">Legal & Compliance</span>
+              <span style="font-size: 0.75rem; color: var(--color-text-tertiary);">8 min read</span>
+            </div>
+            <h3 style="font-size: 1.2rem; margin-bottom: 10px; line-height: 1.35;">
+              <a href="blog-single.html" style="color: var(--color-text-primary);">Fair Housing & AI: Algorithmic Compliance in Modern Tenant Screening</a>
+            </h3>
+            <p style="color: var(--color-text-secondary); font-size: 0.875rem; line-height: 1.6; margin-bottom: 20px;">
+              Navigating federal and local non-discrimination laws while utilizing automated background checks and objective financial scoring models.
+            </p>
+            <div style="margin-top: auto; display: flex; justify-content: space-between; align-items: center; padding-top: 14px; border-top: 1px solid var(--color-border-subtle);">
+              <span style="font-size: 0.8125rem; font-weight: 600; color: var(--color-text-primary);">Legal Research Team</span>
+              <span style="font-size: 0.8125rem; color: var(--color-primary); font-weight: 600;">Read Article →</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Post 5 -->
+        <article class="service-card-deep" style="padding: 0; overflow: hidden;" x-show="(currentCategory === 'all' || currentCategory === 'proptech') && ('Predictive HVAC Plumbing Catastrophic Leaks'.toLowerCase().includes(searchQuery.toLowerCase()))">
+          <div style="height: 200px; overflow: hidden; background: #F1F5F9;">
+            <img src="https://placehold.co/400x300?text=Predictive+Maintenance+Sensors" alt="Predictive Maintenance" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <div style="padding: 28px; display: flex; flex-direction: column; flex-grow: 1;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+              <span class="badge-pill" style="font-size: 0.75rem; padding: 3px 10px;">PropTech & AI</span>
+              <span style="font-size: 0.75rem; color: var(--color-text-tertiary);">6 min read</span>
+            </div>
+            <h3 style="font-size: 1.2rem; margin-bottom: 10px; line-height: 1.35;">
+              <a href="blog-single.html" style="color: var(--color-text-primary);">Predictive Maintenance: Stopping Catastrophic Leaks Before They Occur</a>
+            </h3>
+            <p style="color: var(--color-text-secondary); font-size: 0.875rem; line-height: 1.6; margin-bottom: 20px;">
+              How IoT moisture telemetry and auto-shutoff valves protect property equity and reduce annual insurance premiums by an average of 18%.
+            </p>
+            <div style="margin-top: auto; display: flex; justify-content: space-between; align-items: center; padding-top: 14px; border-top: 1px solid var(--color-border-subtle);">
+              <span style="font-size: 0.8125rem; font-weight: 600; color: var(--color-text-primary);">David Thorne</span>
+              <span style="font-size: 0.8125rem; color: var(--color-primary); font-weight: 600;">Read Article →</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Post 6 -->
+        <article class="service-card-deep" style="padding: 0; overflow: hidden;" x-show="(currentCategory === 'all' || currentCategory === 'finance') && ('Portfolio Tax Optimization Depreciation Schedule E'.toLowerCase().includes(searchQuery.toLowerCase()))">
+          <div style="height: 200px; overflow: hidden; background: #F1F5F9;">
+            <img src="https://placehold.co/400x300?text=Portfolio+Tax+Optimization" alt="Portfolio Tax Optimization" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <div style="padding: 28px; display: flex; flex-direction: column; flex-grow: 1;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+              <span class="badge-pill" style="font-size: 0.75rem; padding: 3px 10px;">Finance & Cashflow</span>
+              <span style="font-size: 0.75rem; color: var(--color-text-tertiary);">7 min read</span>
+            </div>
+            <h3 style="font-size: 1.2rem; margin-bottom: 10px; line-height: 1.35;">
+              <a href="blog-single.html" style="color: var(--color-text-primary);">Portfolio Tax Optimization: Automating Depreciation & Schedule E Classifications</a>
+            </h3>
+            <p style="color: var(--color-text-secondary); font-size: 0.875rem; line-height: 1.6; margin-bottom: 20px;">
+              Streamline CPA tax season handoffs by tagging maintenance repairs vs capital improvements directly within your daily operating ledger.
+            </p>
+            <div style="margin-top: auto; display: flex; justify-content: space-between; align-items: center; padding-top: 14px; border-top: 1px solid var(--color-border-subtle);">
+              <span style="font-size: 0.8125rem; font-weight: 600; color: var(--color-text-primary);">Marcus Sterling</span>
+              <span style="font-size: 0.8125rem; color: var(--color-primary); font-weight: 600;">Read Article →</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Pagination -->
+      <div style="display: flex; justify-content: center; gap: 8px; margin-top: 56px;">
+        <button class="filter-pill-btn active" style="min-width: 40px;">1</button>
+        <button class="filter-pill-btn" style="min-width: 40px;">2</button>
+        <button class="filter-pill-btn" style="min-width: 40px;">3</button>
+        <button class="filter-pill-btn">Next →</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Newsletter Box
+       ======================================================================== -->
+  <section class="section section-bg-subtle">
+    <div class="container">
+      <div style="max-width: 720px; margin: 0 auto; text-align: center;">
+        <div class="badge-pill" style="margin-bottom: 16px;">
+          <span class="sparkle">✦</span>
+          <span>Weekly Newsletter</span>
+        </div>
+        <h2 style="font-size: clamp(1.75rem, 3vw, 2.25rem); color: var(--color-text-primary); margin-bottom: 14px;">
+          Join 25,000+ Real Estate Professionals
+        </h2>
+        <p style="color: var(--color-text-secondary); font-size: 1rem; margin-bottom: 28px;">
+          Every Thursday morning, we send one concise breakdown of proptech innovations, localized rent growth data, and asset optimization tactics.
+        </p>
+        <form class="newsletter-form" id="newsletterFormBlog" style="max-width: 500px; margin: 0 auto;">
+          <input type="email" class="newsletter-input" placeholder="Enter your work email..." required>
+          <button type="submit" class="btn btn-primary btn-sm">Subscribe Free</button>
+        </form>
+        <div style="font-size: 0.75rem; color: var(--color-text-tertiary); margin-top: 12px;">
+          No spam, ever. Unsubscribe with a single click at any time.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Footer
+       ======================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo" style="color: #FFFFFF;">
+            <div class="logo-badge">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              </svg>
+            </div>
+            <span>PrimeStay</span>
+          </a>
+          <p>
+            The intelligent real estate CRM & property management ecosystem built for modern landlords, leasing teams, and property managers worldwide.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="social-link" aria-label="Twitter / X"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+            <a href="#" class="social-link" aria-label="LinkedIn"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.64 1.64 0 1 0 0-3.28 1.64 1.64 0 0 0 0 3.28m1.4 9.74V9.97H5.06v8.53h2.8z"/></svg></a>
+            <a href="#" class="social-link" aria-label="YouTube"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M10 15l5.19-3L10 9v6m11.56-7.83c.13.47.22 1.1.28 1.9.07.8.1 1.49.1 2.09L22 12c0 2.19-.16 3.8-.44 4.83-.25.9-.83 1.48-1.73 1.73-.47.13-1.33.22-2.65.28-1.3.07-2.49.1-3.59.1L12 5c4.19 0 6.8.16 7.83.44.9.25 1.48.83 1.73 1.73z"/></svg></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h5>Platform</h5>
+          <div class="footer-links">
+            <a href="services.html" class="footer-link">Rent Automation</a>
+            <a href="services.html" class="footer-link">Tenant Screening</a>
+            <a href="services.html" class="footer-link">AI Maintenance</a>
+            <a href="services.html" class="footer-link">Portfolio P&L</a>
+            <a href="services.html" class="footer-link">Resident Portal</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h5>Company</h5>
+          <div class="footer-links">
+            <a href="about.html" class="footer-link">About PrimeStay</a>
+            <a href="portfolio.html" class="footer-link">Case Studies</a>
+            <a href="portfolio-single.html" class="footer-link">Featured Story</a>
+            <a href="blog.html" class="footer-link">Blog & News</a>
+            <a href="contact.html" class="footer-link">Careers <span style="font-size: 0.7rem; color: #38BDF8; font-weight: 700;">WE'RE HIRING</span></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h5>Resources</h5>
+          <div class="footer-links">
+            <a href="services.html" class="footer-link">Feature Matrix</a>
+            <a href="blog-single.html" class="footer-link">Latest Research</a>
+            <a href="contact.html" class="footer-link">Help Center</a>
+            <a href="contact.html" class="footer-link">Security & SOC2</a>
+            <a href="contact.html" class="footer-link">Book Consultation</a>
+          </div>
+        </div>
+
+        <div class="footer-col footer-newsletter">
+          <h5>Stay Updated</h5>
+          <p>Get monthly property management strategies and market insights delivered to your inbox.</p>
+          <form class="newsletter-form" id="newsletterForm">
+            <input type="email" class="newsletter-input" placeholder="Your work email..." required>
+            <button type="submit" class="btn btn-primary btn-sm">Join</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 PrimeStay Technologies Inc. All rights reserved.</div>
+        <div style="display: flex; gap: 20px;">
+          <a href="#" class="footer-link">Privacy Policy</a>
+          <a href="#" class="footer-link">Terms of Service</a>
+          <a href="#" class="footer-link">Security Disclosures</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- Interactive JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>

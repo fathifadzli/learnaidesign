@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services & Solutions — PrimeStay Property Management CRM</title>
+  <meta name="description" content="Explore PrimeStay's intelligent property management services: automated rent collection, AI maintenance copilot, tenant screening, real-time analytics, and resident portals.">
+  <meta name="keywords" content="Real Estate Services, Property Management Solutions, Rent Collection Automation, AI Maintenance Dispatch, Tenant Screening SaaS">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="PrimeStay Services — Intelligent Property CRM">
+  <meta property="og:description" content="Transform every facet of your rental portfolio with automated operations and AI-driven precision.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts: Plus Jakarta Sans & Instrument Serif -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
+
+  <!-- Alpine JS -->
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       Header & Navigation
+       ======================================================================== -->
+  <header class="header" id="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="PrimeStay Home">
+        <div class="logo-badge">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+          </svg>
+        </div>
+        <span>PrimeStay</span>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="services.html" class="nav-link active">Services</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="portfolio.html" class="nav-link">Case Studies</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="contact.html" class="btn btn-secondary btn-sm" id="nav-demo-btn">Book A Demo</a>
+        <a href="contact.html" class="btn btn-primary btn-sm" id="nav-start-btn">Get Started</a>
+      </div>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       Page Hero & Breadcrumb
+       ======================================================================== -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="breadcrumb-separator">/</span>
+        <span class="breadcrumb-current">Services & Solutions</span>
+      </div>
+
+      <div class="badge-pill white-glass" style="margin: 0 auto 16px;">
+        <span class="sparkle">✦</span>
+        <span>End-to-End Real Estate Automation</span>
+      </div>
+
+      <h1 class="page-hero-title">
+        <span class="serif-italic">Full-Spectrum</span> Property Operations Engineered for Scale
+      </h1>
+
+      <p class="page-hero-desc">
+        Eliminate manual administrative drag, accelerate cash collections, and deliver 5-star tenant experiences with our unified intelligent real estate management ecosystem.
+      </p>
+
+      <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
+        <a href="#services-grid" class="btn btn-primary btn-lg">
+          <span>Explore Capabilities</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </a>
+        <a href="#calculator" class="btn btn-secondary btn-lg">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg>
+          <span>Calculate ROI</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Deep Services Grid
+       ======================================================================== -->
+  <section class="section" id="services-grid">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge-pill">
+          <span class="sparkle">✦</span>
+          <span>Core Capabilities</span>
+        </div>
+        <h2 class="section-title">
+          Designed for <span class="serif-italic">Modern Portfolios</span> of Any Scale
+        </h2>
+        <p class="section-subtitle">
+          Six foundational modules engineered to streamline leasing, payments, maintenance, and accounting into one autonomous control plane.
+        </p>
+      </div>
+
+      <div class="services-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 32px;">
+        
+        <!-- Service 1 -->
+        <div class="service-card-deep">
+          <div class="card-icon-box">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="5" width="20" height="14" rx="2"></rect>
+              <line x1="2" y1="10" x2="22" y2="10"></line>
+            </svg>
+          </div>
+          <h3 style="font-size: 1.35rem; margin-bottom: 12px; color: var(--color-text-primary);">Automated Rent & Cashflow Ops</h3>
+          <p style="color: var(--color-text-secondary); font-size: 0.9375rem; line-height: 1.6;">
+            Zero-friction next-day ACH deposits, credit card processing, split disbursements to property owners, and automated dynamic late fee calculations.
+          </p>
+          <ul class="service-feature-checklist">
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Instant ACH & Apple Pay / Google Pay rent portals</span>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Automated owner payout distributions & 1099 tax exports</span>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Customizable grace period alerts & automated ledger sync</span>
+            </li>
+          </ul>
+          <div style="margin-top: auto; padding-top: 16px;">
+            <a href="contact.html" class="btn btn-secondary btn-sm" style="width: 100%;">Schedule Demo</a>
+          </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-card-deep">
+          <div class="card-icon-box">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+          </div>
+          <h3 style="font-size: 1.35rem; margin-bottom: 12px; color: var(--color-text-primary);">Intelligent Tenant Screening & Leases</h3>
+          <p style="color: var(--color-text-secondary); font-size: 0.9375rem; line-height: 1.6;">
+            Instant credit, criminal history, and nationwide eviction checks paired with legally validated digital e-lease signing and automated renewal tracking.
+          </p>
+          <ul class="service-feature-checklist">
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Instant TransUnion/Equifax credit scoring & income verification</span>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Digital e-Signature templates with auto-fill fields</span>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Automated 60/90-day lease renewal notifications & price adjustments</span>
+            </li>
+          </ul>
+          <div style="margin-top: auto; padding-top: 16px;">
+            <a href="contact.html" class="btn btn-secondary btn-sm" style="width: 100%;">Schedule Demo</a>
+          </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-card-deep">
+          <div class="card-icon-box">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+            </svg>
+          </div>
+          <h3 style="font-size: 1.35rem; margin-bottom: 12px; color: var(--color-text-primary);">AI Maintenance Copilot & Dispatch</h3>
+          <p style="color: var(--color-text-secondary); font-size: 0.9375rem; line-height: 1.6;">
+            24/7 autonomous issue triage from tenant photo uploads, automated work order creation, preferred vendor dispatch, and real-time repair tracking.
+          </p>
+          <ul class="service-feature-checklist">
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Computer vision photo diagnostic & emergency severity scoring</span>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Automated contractor bid requests & appointment scheduling</span>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>In-app invoice approval and direct vendor payment release</span>
+            </li>
+          </ul>
+          <div style="margin-top: auto; padding-top: 16px;">
+            <a href="contact.html" class="btn btn-secondary btn-sm" style="width: 100%;">Schedule Demo</a>
+          </div>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="service-card-deep">
+          <div class="card-icon-box">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="18" y1="20" x2="18" y2="10"></line>
+              <line x1="12" y1="20" x2="12" y2="4"></line>
+              <line x1="6" y1="20" x2="6" y2="14"></line>
+            </svg>
+          </div>
+          <h3 style="font-size: 1.35rem; margin-bottom: 12px; color: var(--color-text-primary);">Portfolio Analytics & Yield Forecasting</h3>
+          <p style="color: var(--color-text-secondary); font-size: 0.9375rem; line-height: 1.6;">
+            Live executive dashboard tracking Net Operating Income (NOI), cap rates, localized rent benchmarks, unit vacancy heatmaps, and cash-on-cash yield.
+          </p>
+          <ul class="service-feature-checklist">
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>AI rent pricing recommendations based on zip code market comps</span>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>One-click exportable investor P&L, balance sheets & rent rolls</span>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Expense categorization & automated tax deduction tagging</span>
+            </li>
+          </ul>
+          <div style="margin-top: auto; padding-top: 16px;">
+            <a href="contact.html" class="btn btn-secondary btn-sm" style="width: 100%;">Schedule Demo</a>
+          </div>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="service-card-deep">
+          <div class="card-icon-box">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+              <line x1="12" y1="18" x2="12.01" y2="18"></line>
+            </svg>
+          </div>
+          <h3 style="font-size: 1.35rem; margin-bottom: 12px; color: var(--color-text-primary);">White-Label Resident & Owner Portals</h3>
+          <p style="color: var(--color-text-secondary); font-size: 0.9375rem; line-height: 1.6;">
+            A modern, brandable native mobile experience for tenants to pay rent, submit repair tickets, and chat with property managers effortlessly.
+          </p>
+          <ul class="service-feature-checklist">
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Custom branding with your agency logo and color palette</span>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Secure tenant announcement broadcasts & SMS message center</span>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Self-service amenity booking, parking permits & visitor passes</span>
+            </li>
+          </ul>
+          <div style="margin-top: auto; padding-top: 16px;">
+            <a href="contact.html" class="btn btn-secondary btn-sm" style="width: 100%;">Schedule Demo</a>
+          </div>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="service-card-deep">
+          <div class="card-icon-box">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"></path>
+            </svg>
+          </div>
+          <h3 style="font-size: 1.35rem; margin-bottom: 12px; color: var(--color-text-primary);">Smart IoT & Keyless Access Sync</h3>
+          <p style="color: var(--color-text-secondary); font-size: 0.9375rem; line-height: 1.6;">
+            Hardware integrations with smart locks (Yale, Schlage, August), smart thermostats, water leak sensors, and automated self-guided showing pins.
+          </p>
+          <ul class="service-feature-checklist">
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Automated temporary access codes for maintenance contractors</span>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Smart self-guided prospect tours with identity fraud shield</span>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Early water leak detection with automatic main valve shutoff</span>
+            </li>
+          </ul>
+          <div style="margin-top: auto; padding-top: 16px;">
+            <a href="contact.html" class="btn btn-secondary btn-sm" style="width: 100%;">Schedule Demo</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Interactive ROI Calculator
+       ======================================================================== -->
+  <section class="section section-bg-subtle" id="calculator" x-data="{ units: 45, avgRent: 1850 }">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge-pill">
+          <span class="sparkle">✦</span>
+          <span>Interactive Savings Estimator</span>
+        </div>
+        <h2 class="section-title">
+          Calculate Your <span class="serif-italic">Annual Operational ROI</span>
+        </h2>
+        <p class="section-subtitle">
+          See how automating maintenance dispatch, payment reconciliations, and tenant communication reduces overhead costs.
+        </p>
+      </div>
+
+      <div class="calculator-box">
+        <div class="calc-grid">
+          <div>
+            <h3 style="font-size: 1.5rem; color: var(--color-text-primary); margin-bottom: 8px;">Portfolio Parameters</h3>
+            <p style="color: var(--color-text-secondary); font-size: 0.9375rem; margin-bottom: 24px;">Adjust the sliders to mirror your current property management portfolio size.</p>
+
+            <div class="calc-slider-wrapper">
+              <div style="display: flex; justify-content: space-between; font-weight: 600; margin-bottom: 10px;">
+                <span style="color: var(--color-text-primary);">Number of Managed Units:</span>
+                <span style="color: var(--color-primary); font-size: 1.2rem;" x-text="units + ' Units'">45 Units</span>
+              </div>
+              <input type="range" min="5" max="300" step="5" class="calc-slider" x-model="units">
+              <div style="display: flex; justify-content: space-between; font-size: 0.75rem; color: var(--color-text-tertiary); margin-top: 6px;">
+                <span>5 Units</span>
+                <span>150 Units</span>
+                <span>300+ Units</span>
+              </div>
+            </div>
+
+            <div class="calc-slider-wrapper">
+              <div style="display: flex; justify-content: space-between; font-weight: 600; margin-bottom: 10px;">
+                <span style="color: var(--color-text-primary);">Average Monthly Rent per Unit:</span>
+                <span style="color: var(--color-primary); font-size: 1.2rem;" x-text="'$' + avgRent"> $1,850</span>
+              </div>
+              <input type="range" min="800" max="4500" step="50" class="calc-slider" x-model="avgRent">
+              <div style="display: flex; justify-content: space-between; font-size: 0.75rem; color: var(--color-text-tertiary); margin-top: 6px;">
+                <span>$800</span>
+                <span>$2,500</span>
+                <span>$4,500</span>
+              </div>
+            </div>
+
+            <div style="display: flex; gap: 12px; align-items: center; margin-top: 24px; padding: 14px 18px; background: #F8FAFC; border-radius: var(--radius-md); border: 1px solid var(--color-border-subtle);">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+              <span style="font-size: 0.875rem; color: var(--color-text-secondary);">Calculations assume 4.2 admin hours saved per unit/month @ $35/hr labor benchmark.</span>
+            </div>
+          </div>
+
+          <div class="calc-result-card">
+            <span style="font-size: 0.8125rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-text-secondary);">Estimated Annual Savings</span>
+            <div class="calc-stat-value" x-text="'$' + Math.round((units * 4.2 * 35 * 12) + (units * avgRent * 0.015)).toLocaleString()">
+              $78,980
+            </div>
+            <p style="color: var(--color-text-secondary); font-size: 0.9375rem; margin-bottom: 24px;">
+              Reclaim roughly <strong style="color: var(--color-primary);" x-text="Math.round(units * 4.2) + ' hours'">189 hours</strong> of manual operational labor each month.
+            </p>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 24px; text-align: left;">
+              <div style="background: #FFFFFF; padding: 14px; border-radius: var(--radius-md); border: 1px solid var(--color-border-subtle);">
+                <div style="font-size: 0.75rem; color: var(--color-text-tertiary);">Turnover Days</div>
+                <div style="font-weight: 700; color: var(--color-success); font-size: 1.1rem;">-9 Days</div>
+              </div>
+              <div style="background: #FFFFFF; padding: 14px; border-radius: var(--radius-md); border: 1px solid var(--color-border-subtle);">
+                <div style="font-size: 0.75rem; color: var(--color-text-tertiary);">On-Time Rent</div>
+                <div style="font-weight: 700; color: var(--color-success); font-size: 1.1rem;">99.2%</div>
+              </div>
+            </div>
+
+            <a href="contact.html" class="btn btn-primary btn-lg" style="width: 100%;">
+              <span>Get Detailed ROI Audit</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Feature Matrix Comparison
+       ======================================================================== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge-pill">
+          <span class="sparkle">✦</span>
+          <span>Feature Matrix</span>
+        </div>
+        <h2 class="section-title">
+          Compare <span class="serif-italic">Tier Capabilities</span>
+        </h2>
+        <p class="section-subtitle">
+          Transparent, scalable pricing plans tailored to independent landlords, growth agencies, and enterprise REITs.
+        </p>
+      </div>
+
+      <div class="table-responsive">
+        <table class="compare-table">
+          <thead>
+            <tr>
+              <th style="width: 32%;">Core Capability</th>
+              <th style="width: 22%;">Starter (1-20 Units)</th>
+              <th style="width: 24%;" class="featured-col">Growth (21-100 Units) ⭐</th>
+              <th style="width: 22%;">Enterprise (100+ Units)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Automated Rent Collection</strong></td>
+              <td>Standard ACH (3-Day)</td>
+              <td class="featured-col">Next-Day ACH + Cards</td>
+              <td>Instant Real-Time Rails + Wire</td>
+            </tr>
+            <tr>
+              <td><strong>AI Maintenance Dispatch</strong></td>
+              <td>Basic Ticket System</td>
+              <td class="featured-col">AI Triage + Vendor Auto-Bid</td>
+              <td>24/7 Dedicated Call Center & IoT Sync</td>
+            </tr>
+            <tr>
+              <td><strong>Tenant Screening Reports</strong></td>
+              <td>Pay-per-check ($25)</td>
+              <td class="featured-col">Unlimited Free Screenings</td>
+              <td>Unlimited + Custom Risk Algorithms</td>
+            </tr>
+            <tr>
+              <td><strong>Resident Mobile App</strong></td>
+              <td>Standard PrimeStay App</td>
+              <td class="featured-col">Custom Logo Theming</td>
+              <td>Full White-Label App Store Listing</td>
+            </tr>
+            <tr>
+              <td><strong>Accounting & P&L Reports</strong></td>
+              <td>Standard CSV Export</td>
+              <td class="featured-col">QuickBooks & Xero Two-Way Sync</td>
+              <td>Custom ERP (Yardi, RealPage, MRI)</td>
+            </tr>
+            <tr>
+              <td><strong>Dedicated Account Manager</strong></td>
+              <td>Email Support (24h SLA)</td>
+              <td class="featured-col">Priority Chat & Phone (2h SLA)</td>
+              <td>Dedicated Slack & 15-Min VIP Line</td>
+            </tr>
+            <tr>
+              <td><strong>Monthly Cost</strong></td>
+              <td style="font-weight: 700; color: var(--color-text-primary); font-size: 1.25rem;">$29 <span style="font-size: 0.8rem; font-weight: 400; color: var(--color-text-secondary);">/mo</span></td>
+              <td class="featured-col" style="font-weight: 800; color: var(--color-primary); font-size: 1.45rem;">$89 <span style="font-size: 0.8rem; font-weight: 400; color: var(--color-text-secondary);">/mo</span></td>
+              <td style="font-weight: 700; color: var(--color-text-primary); font-size: 1.25rem;">Custom Quote</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       4-Step Onboarding Process
+       ======================================================================== -->
+  <section class="section section-bg-subtle">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge-pill">
+          <span class="sparkle">✦</span>
+          <span>Zero-Friction Migration</span>
+        </div>
+        <h2 class="section-title">
+          Up & Running in <span class="serif-italic">Under 48 Hours</span>
+        </h2>
+        <p class="section-subtitle">
+          Our dedicated onboarding concierge migrates your current tenants, leases, and historical payment ledgers with zero downtime.
+        </p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px;">
+        <div style="background: #FFFFFF; border: 1px solid var(--color-border-subtle); border-radius: var(--radius-xl); padding: 32px; position: relative;">
+          <div style="font-size: 2.2rem; font-weight: 800; color: var(--color-primary-light); margin-bottom: 12px; -webkit-text-stroke: 2px var(--color-primary);">01</div>
+          <h4 style="font-size: 1.15rem; margin-bottom: 8px;">1-Click Data Import</h4>
+          <p style="color: var(--color-text-secondary); font-size: 0.875rem; line-height: 1.6;">
+            Upload existing CSV spreadsheets or connect your legacy property software for automated record extraction.
+          </p>
+        </div>
+
+        <div style="background: #FFFFFF; border: 1px solid var(--color-border-subtle); border-radius: var(--radius-xl); padding: 32px; position: relative;">
+          <div style="font-size: 2.2rem; font-weight: 800; color: var(--color-primary-light); margin-bottom: 12px; -webkit-text-stroke: 2px var(--color-primary);">02</div>
+          <h4 style="font-size: 1.15rem; margin-bottom: 8px;">Bank & Lease Verification</h4>
+          <p style="color: var(--color-text-secondary); font-size: 0.875rem; line-height: 1.6;">
+            Connect your operating accounts via Plaid and verify tenant lease end dates and payment terms.
+          </p>
+        </div>
+
+        <div style="background: #FFFFFF; border: 1px solid var(--color-border-subtle); border-radius: var(--radius-xl); padding: 32px; position: relative;">
+          <div style="font-size: 2.2rem; font-weight: 800; color: var(--color-primary-light); margin-bottom: 12px; -webkit-text-stroke: 2px var(--color-primary);">03</div>
+          <h4 style="font-size: 1.15rem; margin-bottom: 8px;">Tenant Portal Invites</h4>
+          <p style="color: var(--color-text-secondary); font-size: 0.875rem; line-height: 1.6;">
+            Automated SMS & email welcomes sent to all current tenants with 1-click magic setup links.
+          </p>
+        </div>
+
+        <div style="background: #FFFFFF; border: 1px solid var(--color-border-subtle); border-radius: var(--radius-xl); padding: 32px; position: relative;">
+          <div style="font-size: 2.2rem; font-weight: 800; color: var(--color-primary-light); margin-bottom: 12px; -webkit-text-stroke: 2px var(--color-primary);">04</div>
+          <h4 style="font-size: 1.15rem; margin-bottom: 8px;">Autonomous Operations</h4>
+          <p style="color: var(--color-text-secondary); font-size: 0.875rem; line-height: 1.6;">
+            Sit back as rents are collected automatically and AI handles inbound maintenance requests 24/7.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Frequently Asked Questions
+       ======================================================================== -->
+  <section class="section" x-data="{ openFaq: null }">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge-pill">
+          <span class="sparkle">✦</span>
+          <span>Common Questions</span>
+        </div>
+        <h2 class="section-title">
+          Frequently Asked <span class="serif-italic">Questions</span>
+        </h2>
+        <p class="section-subtitle">
+          Everything you need to know about PrimeStay platform features, data security, and setup.
+        </p>
+      </div>
+
+      <div style="max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 16px;">
+        <div style="border: 1px solid var(--color-border-subtle); border-radius: var(--radius-lg); background: #FFFFFF; overflow: hidden;">
+          <button @click="openFaq = (openFaq === 1 ? null : 1)" style="width: 100%; padding: 20px 24px; text-align: left; display: flex; justify-content: space-between; align-items: center; font-weight: 600; color: var(--color-text-primary); font-size: 1.05rem;">
+            <span>How fast can our property agency migrate from our current software?</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" :style="openFaq === 1 ? 'transform: rotate(180deg);' : ''" style="transition: transform 0.2s;"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div x-show="openFaq === 1" x-collapse style="padding: 0 24px 20px; color: var(--color-text-secondary); font-size: 0.9375rem; line-height: 1.6;">
+            Most portfolios with up to 250 units are fully imported and operational within 24 to 48 hours. Our white-glove migration team handles data sanitization, tenant mapping, and historical ledger validation at no extra cost.
+          </div>
+        </div>
+
+        <div style="border: 1px solid var(--color-border-subtle); border-radius: var(--radius-lg); background: #FFFFFF; overflow: hidden;">
+          <button @click="openFaq = (openFaq === 2 ? null : 2)" style="width: 100%; padding: 20px 24px; text-align: left; display: flex; justify-content: space-between; align-items: center; font-weight: 600; color: var(--color-text-primary); font-size: 1.05rem;">
+            <span>Does the AI maintenance copilot contact vendors without my approval?</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" :style="openFaq === 2 ? 'transform: rotate(180deg);' : ''" style="transition: transform 0.2s;"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div x-show="openFaq === 2" x-collapse style="padding: 0 24px 20px; color: var(--color-text-secondary); font-size: 0.9375rem; line-height: 1.6;">
+            You have complete control over authorization thresholds. You can configure rules such as: auto-dispatch for urgent emergencies under $300, or require one-tap property manager approval for non-urgent tasks.
+          </div>
+        </div>
+
+        <div style="border: 1px solid var(--color-border-subtle); border-radius: var(--radius-lg); background: #FFFFFF; overflow: hidden;">
+          <button @click="openFaq = (openFaq === 3 ? null : 3)" style="width: 100%; padding: 20px 24px; text-align: left; display: flex; justify-content: space-between; align-items: center; font-weight: 600; color: var(--color-text-primary); font-size: 1.05rem;">
+            <span>What bank rails and security protocols are used for rent payments?</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" :style="openFaq === 3 ? 'transform: rotate(180deg);' : ''" style="transition: transform 0.2s;"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div x-show="openFaq === 3" x-collapse style="padding: 0 24px 20px; color: var(--color-text-secondary); font-size: 0.9375rem; line-height: 1.6;">
+            PrimeStay utilizes SOC2 Type II certified infrastructure with 256-bit TLS bank-grade encryption and Plaid tokenization. We never store raw banking credentials, ensuring 100% NACHA compliance.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Global High-Converting CTA Banner
+       ======================================================================== -->
+  <section class="section" style="padding-top: 0;">
+    <div class="container">
+      <div style="background: linear-gradient(135deg, var(--color-primary) 0%, #1248B8 100%); border-radius: var(--radius-2xl); padding: 56px 40px; text-align: center; color: #FFFFFF; box-shadow: var(--shadow-glow); position: relative; overflow: hidden;">
+        <div class="badge-pill" style="background: rgba(255,255,255,0.2); border-color: rgba(255,255,255,0.3); color: #FFFFFF; margin-bottom: 20px;">
+          <span class="sparkle" style="color: #FFFFFF;">✦</span>
+          <span>Ready to Automate Your Portfolio?</span>
+        </div>
+        <h2 style="color: #FFFFFF; font-size: clamp(2rem, 3.5vw, 2.75rem); margin-bottom: 16px; font-weight: 800;">
+          Experience PrimeStay with a <span class="serif-italic" style="color: #BAE6FD;">14-Day Free Trial</span>
+        </h2>
+        <p style="color: rgba(255,255,255,0.85); font-size: 1.1rem; max-width: 600px; margin: 0 auto 32px;">
+          No credit card required. Onboard your first property in minutes or book a personalized 1-on-1 walkthrough with our solutions engineer.
+        </p>
+        <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
+          <a href="contact.html" class="btn btn-secondary btn-lg" style="background: #FFFFFF; color: var(--color-primary); border: none;">
+            <span>Start Free Trial</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+          <a href="contact.html" class="btn btn-secondary btn-lg" style="background: rgba(255,255,255,0.15); color: #FFFFFF; border: 1px solid rgba(255,255,255,0.4);">
+            <span>Book Live Demonstration</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Footer
+       ======================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo" style="color: #FFFFFF;">
+            <div class="logo-badge">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              </svg>
+            </div>
+            <span>PrimeStay</span>
+          </a>
+          <p>
+            The intelligent real estate CRM & property management ecosystem built for modern landlords, leasing teams, and property managers worldwide.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="social-link" aria-label="Twitter / X"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+            <a href="#" class="social-link" aria-label="LinkedIn"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.64 1.64 0 1 0 0-3.28 1.64 1.64 0 0 0 0 3.28m1.4 9.74V9.97H5.06v8.53h2.8z"/></svg></a>
+            <a href="#" class="social-link" aria-label="YouTube"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M10 15l5.19-3L10 9v6m11.56-7.83c.13.47.22 1.1.28 1.9.07.8.1 1.49.1 2.09L22 12c0 2.19-.16 3.8-.44 4.83-.25.9-.83 1.48-1.73 1.73-.47.13-1.33.22-2.65.28-1.3.07-2.49.1-3.59.1L12 19c-4.19 0-6.8-.16-7.83-.44-.9-.25-1.48-.83-1.73-1.73-.13-.47-.22-1.1-.28-1.9-.07-.8-.1-1.49-.1-2.09L22 12c0-2.19.16-3.8.44-4.83.25-.9.83-1.48 1.73-1.73.47-.13 1.33-.22 2.65-.28 1.3-.07 2.49-.1 3.59-.1L12 5c4.19 0 6.8.16 7.83.44.9.25 1.48.83 1.73 1.73z"/></svg></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h5>Platform</h5>
+          <div class="footer-links">
+            <a href="services.html" class="footer-link">Rent Automation</a>
+            <a href="services.html" class="footer-link">Tenant Screening</a>
+            <a href="services.html" class="footer-link">AI Maintenance</a>
+            <a href="services.html" class="footer-link">Portfolio P&L</a>
+            <a href="services.html" class="footer-link">Resident Portal</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h5>Company</h5>
+          <div class="footer-links">
+            <a href="about.html" class="footer-link">About PrimeStay</a>
+            <a href="portfolio.html" class="footer-link">Case Studies</a>
+            <a href="portfolio-single.html" class="footer-link">Featured Story</a>
+            <a href="blog.html" class="footer-link">Blog & News</a>
+            <a href="contact.html" class="footer-link">Careers <span style="font-size: 0.7rem; color: #38BDF8; font-weight: 700;">WE'RE HIRING</span></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h5>Resources</h5>
+          <div class="footer-links">
+            <a href="services.html" class="footer-link">Feature Matrix</a>
+            <a href="blog-single.html" class="footer-link">Latest Research</a>
+            <a href="contact.html" class="footer-link">Help Center</a>
+            <a href="contact.html" class="footer-link">Security & SOC2</a>
+            <a href="contact.html" class="footer-link">Book Consultation</a>
+          </div>
+        </div>
+
+        <div class="footer-col footer-newsletter">
+          <h5>Stay Updated</h5>
+          <p>Get monthly property management strategies and market insights delivered to your inbox.</p>
+          <form class="newsletter-form" id="newsletterForm">
+            <input type="email" class="newsletter-input" placeholder="Your work email..." required>
+            <button type="submit" class="btn btn-primary btn-sm">Join</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 PrimeStay Technologies Inc. All rights reserved.</div>
+        <div style="display: flex; gap: 20px;">
+          <a href="#" class="footer-link">Privacy Policy</a>
+          <a href="#" class="footer-link">Terms of Service</a>
+          <a href="#" class="footer-link">Security Disclosures</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- Interactive JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>

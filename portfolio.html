@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Case Studies & Client Outcomes — PrimeStay CRM</title>
+  <meta name="description" content="Discover how leading real estate agencies, multifamily operators, and REITs scale yield, eliminate maintenance delays, and automate rent collection with PrimeStay.">
+  <meta name="keywords" content="Real Estate Case Studies, Property Management ROI, Multifamily CRM Success, PropTech Results, PrimeStay Client Stories">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="PrimeStay Case Studies — Proven Real Estate Results">
+  <meta property="og:description" content="Explore verified data, metrics, and case studies across 400,000+ managed properties.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts: Plus Jakarta Sans & Instrument Serif -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
+
+  <!-- Alpine JS -->
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       Header & Navigation
+       ======================================================================== -->
+  <header class="header" id="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="PrimeStay Home">
+        <div class="logo-badge">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+          </svg>
+        </div>
+        <span>PrimeStay</span>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="portfolio.html" class="nav-link active">Case Studies</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="contact.html" class="btn btn-secondary btn-sm" id="nav-demo-btn">Book A Demo</a>
+        <a href="services.html" class="btn btn-primary btn-sm" id="nav-start-btn">Get Started</a>
+      </div>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       Page Hero & Breadcrumb
+       ======================================================================== -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="breadcrumb-separator">/</span>
+        <span class="breadcrumb-current">Case Studies & Outcomes</span>
+      </div>
+
+      <div class="badge-pill white-glass" style="margin: 0 auto 16px;">
+        <span class="sparkle">✦</span>
+        <span>Proven Real Estate Impact</span>
+      </div>
+
+      <h1 class="page-hero-title">
+        <span class="serif-italic">Real Results</span> Across 400,000+ Managed Units
+      </h1>
+
+      <p class="page-hero-desc">
+        Explore how premier multifamily operators, build-to-rent developers, and commercial managers use PrimeStay to scale NOI and delight tenants.
+      </p>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Case Studies Grid & Filter Section
+       ======================================================================== -->
+  <section class="section" x-data="{ sector: 'all' }">
+    <div class="container">
+
+      <!-- Featured Spotlight Case Study -->
+      <div class="blog-spotlight-card" x-show="sector === 'all' || sector === 'multifamily'">
+        <div class="blog-spotlight-img">
+          <img src="https://placehold.co/1200x700?text=Apex+Urban+Living+Spotlight" alt="Apex Urban Living Featured Story">
+          <div style="position: absolute; top: 20px; left: 20px;">
+            <span class="badge-pill" style="background: rgba(15, 23, 42, 0.85); color: #FFFFFF; border-color: rgba(255,255,255,0.2);">
+              <span class="sparkle" style="color: #38BDF8;">✦</span>
+              <span>Featured Case Study</span>
+            </span>
+          </div>
+        </div>
+        <div class="blog-spotlight-content">
+          <div style="display: flex; gap: 12px; align-items: center; margin-bottom: 12px; font-size: 0.8125rem;">
+            <span style="color: var(--color-primary); font-weight: 700; text-transform: uppercase;">Multifamily • 3,400 Units</span>
+            <span style="color: var(--color-text-tertiary);">•</span>
+            <span class="metric-pill-badge">+42% NOI Margin</span>
+          </div>
+          <h2 style="font-size: clamp(1.5rem, 2.5vw, 1.85rem); margin-bottom: 14px; color: var(--color-text-primary); line-height: 1.25;">
+            <a href="portfolio-single.html" style="color: inherit;">
+              Apex Urban Living: Scaling 3,400 Units Across 4 States with Zero Overhead Growth
+            </a>
+          </h2>
+          <p style="color: var(--color-text-secondary); font-size: 0.9375rem; line-height: 1.6; margin-bottom: 24px;">
+            How Apex replaced 4 disconnected software silos with PrimeStay's unified CRM & AI maintenance engine, cutting dispatch lag by 54% and saving $1.2M in annual contractor costs.
+          </p>
+          <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px;">
+            <div style="display: flex; gap: 16px;">
+              <div>
+                <div style="font-size: 1.25rem; font-weight: 800; color: var(--color-primary);">98.6%</div>
+                <div style="font-size: 0.75rem; color: var(--color-text-tertiary);">Occupancy Rate</div>
+              </div>
+              <div style="border-left: 1px solid var(--color-border-subtle); padding-left: 16px;">
+                <div style="font-size: 1.25rem; font-weight: 800; color: var(--color-success);">-54%</div>
+                <div style="font-size: 0.75rem; color: var(--color-text-tertiary);">Repair Lag</div>
+              </div>
+            </div>
+            <a href="portfolio-single.html" class="btn btn-primary btn-sm">
+              <span>Read Full Case Study</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sector Filter Tabs -->
+      <div class="blog-controls" style="justify-content: center; margin-bottom: 48px;">
+        <div class="filter-pills-row">
+          <button class="filter-pill-btn" :class="{ 'active': sector === 'all' }" @click="sector = 'all'">All Portfolios</button>
+          <button class="filter-pill-btn" :class="{ 'active': sector === 'multifamily' }" @click="sector = 'multifamily'">Multifamily</button>
+          <button class="filter-pill-btn" :class="{ 'active': sector === 'commercial' }" @click="sector = 'commercial'">Commercial & Office</button>
+          <button class="filter-pill-btn" :class="{ 'active': sector === 'hospitality' }" @click="sector = 'hospitality'">Short-Term Stays</button>
+          <button class="filter-pill-btn" :class="{ 'active': sector === 'btr' }" @click="sector = 'btr'">Build-to-Rent & HOA</button>
+        </div>
+      </div>
+
+      <!-- Portfolio Grid -->
+      <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 32px;">
+        
+        <!-- Case 1: Multifamily -->
+        <div class="portfolio-card" x-show="sector === 'all' || sector === 'multifamily'">
+          <div class="portfolio-img-wrap">
+            <img src="https://placehold.co/600x400?text=Apex+Urban+Living+Multifamily" alt="Apex Urban Living">
+            <div style="position: absolute; top: 16px; left: 16px;">
+              <span class="badge-pill" style="background: rgba(255,255,255,0.9); font-size: 0.75rem;">Multifamily (3,400 Units)</span>
+            </div>
+          </div>
+          <div class="portfolio-body">
+            <div style="margin-bottom: 12px;">
+              <span class="metric-pill-badge">+42% NOI Margin</span>
+            </div>
+            <h3 style="font-size: 1.25rem; margin-bottom: 10px; line-height: 1.35;">
+              <a href="portfolio-single.html" style="color: var(--color-text-primary);">Apex Urban Living: 4-State Scaling with Automated Operations</a>
+            </h3>
+            <p style="color: var(--color-text-secondary); font-size: 0.875rem; line-height: 1.6; margin-bottom: 20px;">
+              Automated next-day rent settlement, AI maintenance dispatch, and unified white-label mobile resident app.
+            </p>
+            <div style="margin-top: auto; display: flex; justify-content: space-between; align-items: center; padding-top: 16px; border-top: 1px solid var(--color-border-subtle);">
+              <span style="font-size: 0.8125rem; font-weight: 700; color: var(--color-text-primary);">$1.2M Annual Savings</span>
+              <a href="portfolio-single.html" style="color: var(--color-primary); font-weight: 600; font-size: 0.875rem;">View Story →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Case 2: Commercial -->
+        <div class="portfolio-card" x-show="sector === 'all' || sector === 'commercial'">
+          <div class="portfolio-img-wrap">
+            <img src="https://placehold.co/600x400?text=Vantage+Commercial+Center" alt="Vantage Commercial Center">
+            <div style="position: absolute; top: 16px; left: 16px;">
+              <span class="badge-pill" style="background: rgba(255,255,255,0.9); font-size: 0.75rem;">Commercial (1.2M Sq.Ft)</span>
+            </div>
+          </div>
+          <div class="portfolio-body">
+            <div style="margin-bottom: 12px;">
+              <span class="metric-pill-badge">99.4% On-Time Rent</span>
+            </div>
+            <h3 style="font-size: 1.25rem; margin-bottom: 10px; line-height: 1.35;">
+              <a href="portfolio-single.html" style="color: var(--color-text-primary);">Vantage Towers: Automated CAM Reconciliation & NNN Billing</a>
+            </h3>
+            <p style="color: var(--color-text-secondary); font-size: 0.875rem; line-height: 1.6; margin-bottom: 20px;">
+              Automated Common Area Maintenance (CAM) reconciliations, corporate invoicing, and two-way ERP ledger sync.
+            </p>
+            <div style="margin-top: auto; display: flex; justify-content: space-between; align-items: center; padding-top: 16px; border-top: 1px solid var(--color-border-subtle);">
+              <span style="font-size: 0.8125rem; font-weight: 700; color: var(--color-text-primary);">280 Hours Saved / Mo</span>
+              <a href="portfolio-single.html" style="color: var(--color-primary); font-weight: 600; font-size: 0.875rem;">View Story →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Case 3: Hospitality / Short-Term -->
+        <div class="portfolio-card" x-show="sector === 'all' || sector === 'hospitality'">
+          <div class="portfolio-img-wrap">
+            <img src="https://placehold.co/600x400?text=Horizon+Stays+Hospitality" alt="Horizon Stays Hospitality">
+            <div style="position: absolute; top: 16px; left: 16px;">
+              <span class="badge-pill" style="background: rgba(255,255,255,0.9); font-size: 0.75rem;">Hospitality (850 Units)</span>
+            </div>
+          </div>
+          <div class="portfolio-body">
+            <div style="margin-bottom: 12px;">
+              <span class="metric-pill-badge">+31% RevPAR Growth</span>
+            </div>
+            <h3 style="font-size: 1.25rem; margin-bottom: 10px; line-height: 1.35;">
+              <a href="portfolio-single.html" style="color: var(--color-text-primary);">Horizon Stays: Smart Locks & Dynamic Pricing Automation</a>
+            </h3>
+            <p style="color: var(--color-text-secondary); font-size: 0.875rem; line-height: 1.6; margin-bottom: 20px;">
+              Autonomous PIN keyless access synchronization with Airbnb/VRBO calendars and algorithmic occupancy pricing.
+            </p>
+            <div style="margin-top: auto; display: flex; justify-content: space-between; align-items: center; padding-top: 16px; border-top: 1px solid var(--color-border-subtle);">
+              <span style="font-size: 0.8125rem; font-weight: 700; color: var(--color-text-primary);">100% Keyless Check-in</span>
+              <a href="portfolio-single.html" style="color: var(--color-primary); font-weight: 600; font-size: 0.875rem;">View Story →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Case 4: Build-to-Rent & HOA -->
+        <div class="portfolio-card" x-show="sector === 'all' || sector === 'btr'">
+          <div class="portfolio-img-wrap">
+            <img src="https://placehold.co/600x400?text=BlueSky+Communities+BTR" alt="BlueSky Communities BTR">
+            <div style="position: absolute; top: 16px; left: 16px;">
+              <span class="badge-pill" style="background: rgba(255,255,255,0.9); font-size: 0.75rem;">Build-to-Rent (2,100 Homes)</span>
+            </div>
+          </div>
+          <div class="portfolio-body">
+            <div style="margin-bottom: 12px;">
+              <span class="metric-pill-badge">-68% Overhead Drag</span>
+            </div>
+            <h3 style="font-size: 1.25rem; margin-bottom: 10px; line-height: 1.35;">
+              <a href="portfolio-single.html" style="color: var(--color-text-primary);">BlueSky Communities: Single-Family Rental Portfolio Management</a>
+            </h3>
+            <p style="color: var(--color-text-secondary); font-size: 0.875rem; line-height: 1.6; margin-bottom: 20px;">
+              Remote inspection automation, HOA compliance tracking, and direct investor distributions across 12 communities.
+            </p>
+            <div style="margin-top: auto; display: flex; justify-content: space-between; align-items: center; padding-top: 16px; border-top: 1px solid var(--color-border-subtle);">
+              <span style="font-size: 0.8125rem; font-weight: 700; color: var(--color-text-primary);">$1.4M Saved in Year 1</span>
+              <a href="portfolio-single.html" style="color: var(--color-primary); font-weight: 600; font-size: 0.875rem;">View Story →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Case 5: Multifamily -->
+        <div class="portfolio-card" x-show="sector === 'all' || sector === 'multifamily'">
+          <div class="portfolio-img-wrap">
+            <img src="https://placehold.co/600x400?text=MetroCity+Residential" alt="MetroCity Residential">
+            <div style="position: absolute; top: 16px; left: 16px;">
+              <span class="badge-pill" style="background: rgba(255,255,255,0.9); font-size: 0.75rem;">Multifamily (1,600 Units)</span>
+            </div>
+          </div>
+          <div class="portfolio-body">
+            <div style="margin-bottom: 12px;">
+              <span class="metric-pill-badge">0 Eviction Disputes</span>
+            </div>
+            <h3 style="font-size: 1.25rem; margin-bottom: 10px; line-height: 1.35;">
+              <a href="portfolio-single.html" style="color: var(--color-text-primary);">MetroCity Group: Algorithmic Tenant Screening & Fraud Protection</a>
+            </h3>
+            <p style="color: var(--color-text-secondary); font-size: 0.875rem; line-height: 1.6; margin-bottom: 20px;">
+              Automated bank income verification and credit risk models eliminated fraudulent paystubs and defaults entirely.
+            </p>
+            <div style="margin-top: auto; display: flex; justify-content: space-between; align-items: center; padding-top: 16px; border-top: 1px solid var(--color-border-subtle);">
+              <span style="font-size: 0.8125rem; font-weight: 700; color: var(--color-text-primary);">99.8% Payment Rate</span>
+              <a href="portfolio-single.html" style="color: var(--color-primary); font-weight: 600; font-size: 0.875rem;">View Story →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Case 6: Commercial Mixed Use -->
+        <div class="portfolio-card" x-show="sector === 'all' || sector === 'commercial'">
+          <div class="portfolio-img-wrap">
+            <img src="https://placehold.co/600x400?text=Pacific+Coast+Assets" alt="Pacific Coast Assets">
+            <div style="position: absolute; top: 16px; left: 16px;">
+              <span class="badge-pill" style="background: rgba(255,255,255,0.9); font-size: 0.75rem;">Mixed-Use (950K Sq.Ft)</span>
+            </div>
+          </div>
+          <div class="portfolio-body">
+            <div style="margin-bottom: 12px;">
+              <span class="metric-pill-badge">3-Week Migration</span>
+            </div>
+            <h3 style="font-size: 1.25rem; margin-bottom: 10px; line-height: 1.35;">
+              <a href="portfolio-single.html" style="color: var(--color-text-primary);">Pacific Coast Asset Group: Seamless Legacy Software Replacement</a>
+            </h3>
+            <p style="color: var(--color-text-secondary); font-size: 0.875rem; line-height: 1.6; margin-bottom: 20px;">
+              Migrated 12 years of historical ledger accounting and commercial leases without a single hour of downtime.
+            </p>
+            <div style="margin-top: auto; display: flex; justify-content: space-between; align-items: center; padding-top: 16px; border-top: 1px solid var(--color-border-subtle);">
+              <span style="font-size: 0.8125rem; font-weight: 700; color: var(--color-text-primary);">Zero Data Loss</span>
+              <a href="portfolio-single.html" style="color: var(--color-primary); font-weight: 600; font-size: 0.875rem;">View Story →</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Impact Statistics Strip
+       ======================================================================== -->
+  <section class="section section-bg-subtle" style="padding: 64px 0;">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 32px; text-align: center;">
+        <div>
+          <div style="font-size: 2.8rem; font-weight: 800; color: var(--color-primary);">$140M+</div>
+          <div style="font-size: 0.9375rem; color: var(--color-text-secondary); font-weight: 600; margin-top: 6px;">Client Maintenance Savings</div>
+        </div>
+        <div>
+          <div style="font-size: 2.8rem; font-weight: 800; color: var(--color-primary);">1.8M+</div>
+          <div style="font-size: 0.9375rem; color: var(--color-text-secondary); font-weight: 600; margin-top: 6px;">Admin Hours Automated</div>
+        </div>
+        <div>
+          <div style="font-size: 2.8rem; font-weight: 800; color: var(--color-primary);">99.4%</div>
+          <div style="font-size: 0.9375rem; color: var(--color-text-secondary); font-weight: 600; margin-top: 6px;">Annual Client Retention</div>
+        </div>
+        <div>
+          <div style="font-size: 2.8rem; font-weight: 800; color: var(--color-primary);">4.9 / 5</div>
+          <div style="font-size: 0.9375rem; color: var(--color-text-secondary); font-weight: 600; margin-top: 6px;">Resident App Store Rating</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Global High-Converting CTA Banner
+       ======================================================================== -->
+  <section class="section" style="padding-top: 0;">
+    <div class="container">
+      <div style="background: linear-gradient(135deg, var(--color-primary) 0%, #1248B8 100%); border-radius: var(--radius-2xl); padding: 56px 40px; text-align: center; color: #FFFFFF; box-shadow: var(--shadow-glow); position: relative; overflow: hidden;">
+        <div class="badge-pill" style="background: rgba(255,255,255,0.2); border-color: rgba(255,255,255,0.3); color: #FFFFFF; margin-bottom: 20px;">
+          <span class="sparkle" style="color: #FFFFFF;">✦</span>
+          <span>Deliver Outsized Returns</span>
+        </div>
+        <h2 style="color: #FFFFFF; font-size: clamp(2rem, 3.5vw, 2.75rem); margin-bottom: 16px; font-weight: 800;">
+          Ready to Write Your <span class="serif-italic" style="color: #BAE6FD;">Success Story?</span>
+        </h2>
+        <p style="color: rgba(255,255,255,0.85); font-size: 1.1rem; max-width: 600px; margin: 0 auto 32px;">
+          Join over 400,000 properties operating on PrimeStay. Book your custom portfolio consultation today.
+        </p>
+        <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
+          <a href="contact.html" class="btn btn-secondary btn-lg" style="background: #FFFFFF; color: var(--color-primary); border: none;">
+            <span>Book A Free Demo</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+          <a href="services.html" class="btn btn-secondary btn-lg" style="background: rgba(255,255,255,0.15); color: #FFFFFF; border: 1px solid rgba(255,255,255,0.4);">
+            <span>Calculate ROI</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Footer
+       ======================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo" style="color: #FFFFFF;">
+            <div class="logo-badge">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              </svg>
+            </div>
+            <span>PrimeStay</span>
+          </a>
+          <p>
+            The intelligent real estate CRM & property management ecosystem built for modern landlords, leasing teams, and property managers worldwide.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="social-link" aria-label="Twitter / X"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+            <a href="#" class="social-link" aria-label="LinkedIn"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.64 1.64 0 1 0 0-3.28 1.64 1.64 0 0 0 0 3.28m1.4 9.74V9.97H5.06v8.53h2.8z"/></svg></a>
+            <a href="#" class="social-link" aria-label="YouTube"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M10 15l5.19-3L10 9v6m11.56-7.83c.13.47.22 1.1.28 1.9.07.8.1 1.49.1 2.09L22 12c0 2.19-.16 3.8-.44 4.83-.25.9-.83 1.48-1.73 1.73-.47.13-1.33.22-2.65.28-1.3.07-2.49.1-3.59.1L12 5c4.19 0 6.8.16 7.83.44.9.25 1.48.83 1.73 1.73z"/></svg></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h5>Platform</h5>
+          <div class="footer-links">
+            <a href="services.html" class="footer-link">Rent Automation</a>
+            <a href="services.html" class="footer-link">Tenant Screening</a>
+            <a href="services.html" class="footer-link">AI Maintenance</a>
+            <a href="services.html" class="footer-link">Portfolio P&L</a>
+            <a href="services.html" class="footer-link">Resident Portal</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h5>Company</h5>
+          <div class="footer-links">
+            <a href="about.html" class="footer-link">About PrimeStay</a>
+            <a href="portfolio.html" class="footer-link">Case Studies</a>
+            <a href="portfolio-single.html" class="footer-link">Featured Story</a>
+            <a href="blog.html" class="footer-link">Blog & News</a>
+            <a href="contact.html" class="footer-link">Careers <span style="font-size: 0.7rem; color: #38BDF8; font-weight: 700;">WE'RE HIRING</span></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h5>Resources</h5>
+          <div class="footer-links">
+            <a href="services.html" class="footer-link">Feature Matrix</a>
+            <a href="blog-single.html" class="footer-link">Latest Research</a>
+            <a href="contact.html" class="footer-link">Help Center</a>
+            <a href="contact.html" class="footer-link">Security & SOC2</a>
+            <a href="contact.html" class="footer-link">Book Consultation</a>
+          </div>
+        </div>
+
+        <div class="footer-col footer-newsletter">
+          <h5>Stay Updated</h5>
+          <p>Get monthly property management strategies and market insights delivered to your inbox.</p>
+          <form class="newsletter-form" id="newsletterFormPortfolio">
+            <input type="email" class="newsletter-input" placeholder="Your work email..." required>
+            <button type="submit" class="btn btn-primary btn-sm">Join</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 PrimeStay Technologies Inc. All rights reserved.</div>
+        <div style="display: flex; gap: 20px;">
+          <a href="#" class="footer-link">Privacy Policy</a>
+          <a href="#" class="footer-link">Terms of Service</a>
+          <a href="#" class="footer-link">Security Disclosures</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- Interactive JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apex Urban Living Case Study — PrimeStay Customer Success</title>
+  <meta name="description" content="Read how Apex Urban Living scaled 3,400 multifamily units across 4 states, achieving a +42% NOI margin and 54% reduction in maintenance lag with PrimeStay.">
+  <meta name="keywords" content="Apex Urban Living Case Study, Multifamily Property Management, Real Estate ROI, PropTech Automation, PrimeStay Results">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Apex Urban Living: 3,400 Units Scaled with PrimeStay">
+  <meta property="og:description" content="+42% NOI Margin, 98.6% Occupancy, and $1.2M annual maintenance savings.">
+  <meta property="og:type" content="article">
+
+  <!-- Google Fonts: Plus Jakarta Sans & Instrument Serif -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
+
+  <!-- Alpine JS -->
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       Header & Navigation
+       ======================================================================== -->
+  <header class="header" id="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="PrimeStay Home">
+        <div class="logo-badge">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+          </svg>
+        </div>
+        <span>PrimeStay</span>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="portfolio.html" class="nav-link active">Case Studies</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="contact.html" class="btn btn-secondary btn-sm" id="nav-demo-btn">Book A Demo</a>
+        <a href="services.html" class="btn btn-primary btn-sm" id="nav-start-btn">Get Started</a>
+      </div>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       Case Study Hero & Breadcrumb
+       ======================================================================== -->
+  <section class="page-hero" style="padding-bottom: 40px;">
+    <div class="container" style="max-width: 960px;">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="breadcrumb-separator">/</span>
+        <a href="portfolio.html">Case Studies</a>
+        <span class="breadcrumb-separator">/</span>
+        <span class="breadcrumb-current">Apex Urban Living</span>
+      </div>
+
+      <div class="badge-pill white-glass" style="margin: 0 auto 16px;">
+        <span class="sparkle">✦</span>
+        <span>Multifamily Enterprise Case Study</span>
+      </div>
+
+      <h1 class="page-hero-title" style="font-size: clamp(2rem, 4vw, 3rem); line-height: 1.2;">
+        <span class="serif-italic">Scaling 3,400 Units</span> Across 4 States with 42% Reduction in Operating Overheads
+      </h1>
+
+      <p class="page-hero-desc">
+        How Apex Urban Living centralized leasing, eliminated 72-hour maintenance lags, and automated multi-entity investor accounting using PrimeStay.
+      </p>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Key Metrics Strip
+       ======================================================================== -->
+  <section style="background: #FFFFFF; border-top: 1px solid var(--color-border-subtle); border-bottom: 1px solid var(--color-border-subtle); padding: 32px 0;">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 24px; text-align: center;">
+        <div>
+          <div style="font-size: 0.8125rem; color: var(--color-text-tertiary); font-weight: 700; text-transform: uppercase;">Portfolio Size</div>
+          <div style="font-size: 1.75rem; font-weight: 800; color: var(--color-text-primary); margin-top: 4px;">3,400 Units</div>
+        </div>
+        <div>
+          <div style="font-size: 0.8125rem; color: var(--color-text-tertiary); font-weight: 700; text-transform: uppercase;">NOI Margin Growth</div>
+          <div style="font-size: 1.75rem; font-weight: 800; color: var(--color-success); margin-top: 4px;">+42%</div>
+        </div>
+        <div>
+          <div style="font-size: 0.8125rem; color: var(--color-text-tertiary); font-weight: 700; text-transform: uppercase;">Repair Lag Reduction</div>
+          <div style="font-size: 1.75rem; font-weight: 800; color: var(--color-primary); margin-top: 4px;">-54%</div>
+        </div>
+        <div>
+          <div style="font-size: 0.8125rem; color: var(--color-text-tertiary); font-weight: 700; text-transform: uppercase;">Portfolio Occupancy</div>
+          <div style="font-size: 1.75rem; font-weight: 800; color: var(--color-text-primary); margin-top: 4px;">98.6%</div>
+        </div>
+        <div>
+          <div style="font-size: 0.8125rem; color: var(--color-text-tertiary); font-weight: 700; text-transform: uppercase;">Annual Cost Savings</div>
+          <div style="font-size: 1.75rem; font-weight: 800; color: var(--color-primary); margin-top: 4px;">$1.2M / Year</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Case Study Narrative & Body
+       ======================================================================== -->
+  <section class="section">
+    <div class="container" style="max-width: 900px;">
+      
+      <!-- Feature Visual -->
+      <div style="border-radius: var(--radius-2xl); overflow: hidden; margin-bottom: 48px; box-shadow: var(--shadow-xl);">
+        <img src="https://placehold.co/1200x700?text=Apex+Urban+Living+Multifamily+Asset+Overview" alt="Apex Urban Living Portfolio Overview" style="width: 100%; height: auto;">
+      </div>
+
+      <div class="article-body">
+        
+        <h2>1. Client Overview & Regional Footprint</h2>
+        <p>
+          Apex Urban Living is a high-growth multifamily investment and asset management operator headquartered in Austin, Texas. Over a 36-month period, Apex expanded its portfolio from 850 units to over 3,400 Class-A and Class-B residential units spanning Texas, Colorado, Arizona, and Georgia.
+        </p>
+
+        <h2>2. The Challenge: Fragmented Legacy Drag</h2>
+        <p>
+          As the portfolio tripled in size, Apex's operational infrastructure broke under the strain of four disconnected legacy software tools:
+        </p>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; margin: 28px 0;">
+          <div style="background: var(--color-bg-subtle); padding: 20px; border-radius: var(--radius-lg); border: 1px solid var(--color-border-subtle);">
+            <div style="font-weight: 700; color: var(--color-danger); margin-bottom: 6px;">72-Hour Repair Latency</div>
+            <p style="font-size: 0.875rem; margin-bottom: 0; color: var(--color-text-secondary);">Maintenance tickets sat in email queues, requiring manual property manager phone tag with local plumbers and electricians.</p>
+          </div>
+          <div style="background: var(--color-bg-subtle); padding: 20px; border-radius: var(--radius-lg); border: 1px solid var(--color-border-subtle);">
+            <div style="font-weight: 700; color: var(--color-danger); margin-bottom: 6px;">Manual Rent Reconciliations</div>
+            <p style="font-size: 0.875rem; margin-bottom: 0; color: var(--color-text-secondary);">Accounting spent 11 business days each month reconciling disparate check payments, ACH reversals, and paper lockboxes.</p>
+          </div>
+          <div style="background: var(--color-bg-subtle); padding: 20px; border-radius: var(--radius-lg); border: 1px solid var(--color-border-subtle);">
+            <div style="font-weight: 700; color: var(--color-danger); margin-bottom: 6px;">Tenant Churn at 38%</div>
+            <p style="font-size: 0.875rem; margin-bottom: 0; color: var(--color-text-secondary);">Frustrated residents left negative reviews online due to slow communication, causing vacancy marketing costs to spike.</p>
+          </div>
+        </div>
+
+        <h2>3. The PrimeStay Solution</h2>
+        <p>
+          In Q2, Apex deployed PrimeStay Enterprise across all 3,400 units, replacing four disparate systems with one autonomous platform:
+        </p>
+
+        <ul>
+          <li><strong>Autonomous Rent Rails:</strong> 100% of residents onboarded to next-day digital ACH and mobile pay, with automated late-rule enforcement and real-time ledger balance updates.</li>
+          <li><strong>Computer Vision Maintenance Triage:</strong> Tenants upload 5-second video clips of plumbing/electrical faults. PrimeStay automatically identifies required replacement parts and dispatches preferred contractors within 4 minutes.</li>
+          <li><strong>Multi-Entity Investor Reporting:</strong> 28 distinct ownership LLCs receive automated monthly owner distributions, 1099 exports, and unit-level P&L dashboards.</li>
+        </ul>
+
+        <!-- Testimonial Spotlight Callout -->
+        <div style="background: linear-gradient(135deg, var(--color-primary-subtle) 0%, #FFFFFF 100%); border: 1px solid rgba(29, 100, 236, 0.2); border-radius: var(--radius-2xl); padding: 36px; margin: 40px 0; box-shadow: var(--shadow-md);">
+          <div style="display: flex; gap: 4px; color: var(--color-warning-star); margin-bottom: 16px;">
+            ★★★★★
+          </div>
+          <blockquote style="border-left: none; padding: 0; margin: 0 0 24px; font-size: 1.25rem; font-family: var(--font-serif); font-style: italic; color: var(--color-text-primary); line-height: 1.5;">
+            "Switching to PrimeStay felt like going from handwritten spreadsheets to an autonomous Tesla. Our on-site property managers reclaimed over 120 hours each month, and our maintenance resolution time plummeted by more than half."
+          </blockquote>
+          <div style="display: flex; align-items: center; gap: 16px;">
+            <img src="https://placehold.co/200x200?text=Samira+Patel" alt="Samira Patel" style="width: 52px; height: 52px; border-radius: 50%; object-fit: cover;">
+            <div>
+              <div style="font-weight: 700; color: var(--color-text-primary);">Samira Patel</div>
+              <div style="font-size: 0.8125rem; color: var(--color-text-secondary);">Chief Operating Officer, Apex Urban Living</div>
+            </div>
+          </div>
+        </div>
+
+        <h2>4. Quantifiable ROI & Before / After Impact</h2>
+        <p>
+          Following 6 months of continuous operation on the PrimeStay platform, Apex achieved unprecedented operational efficiencies:
+        </p>
+
+        <div class="table-responsive" style="margin: 28px 0;">
+          <table class="compare-table">
+            <thead>
+              <tr>
+                <th>Operational Metric</th>
+                <th>Legacy Systems</th>
+                <th class="featured-col">With PrimeStay Enterprise</th>
+                <th>Net Impact</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Average Repair Resolution Time</strong></td>
+                <td>74 Hours</td>
+                <td class="featured-col"><strong>34 Hours</strong></td>
+                <td style="color: var(--color-success); font-weight: 700;">-54% Reduction</td>
+              </tr>
+              <tr>
+                <td><strong>On-Time Rent Collection Rate</strong></td>
+                <td>89.2%</td>
+                <td class="featured-col"><strong>99.1%</strong></td>
+                <td style="color: var(--color-success); font-weight: 700;">+9.9% Lift</td>
+              </tr>
+              <tr>
+                <td><strong>Monthly Ledger Close Duration</strong></td>
+                <td>11 Business Days</td>
+                <td class="featured-col"><strong>2 Hours (Automated)</strong></td>
+                <td style="color: var(--color-success); font-weight: 700;">97% Time Saved</td>
+              </tr>
+              <tr>
+                <td><strong>Annual Lease Renewal Rate</strong></td>
+                <td>62%</td>
+                <td class="featured-col"><strong>84%</strong></td>
+                <td style="color: var(--color-success); font-weight: 700;">+22% Retention</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2>5. Visual Workflows Deployed</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; margin: 32px 0;">
+          <div style="border: 1px solid var(--color-border-subtle); border-radius: var(--radius-xl); overflow: hidden;">
+            <img src="https://placehold.co/600x400?text=Automated+Disbursements+Dashboard" alt="Disbursements Dashboard" style="width: 100%; height: 200px; object-fit: cover;">
+            <div style="padding: 16px;">
+              <h5 style="font-size: 0.9375rem; margin-bottom: 4px;">Automated Owner Ledger Sync</h5>
+              <p style="font-size: 0.8125rem; color: var(--color-text-secondary); margin-bottom: 0;">Multi-entity payout routing to 28 ownership syndications.</p>
+            </div>
+          </div>
+          <div style="border: 1px solid var(--color-border-subtle); border-radius: var(--radius-xl); overflow: hidden;">
+            <img src="https://placehold.co/600x400?text=White-Label+Resident+Portal" alt="Resident Portal App" style="width: 100%; height: 200px; object-fit: cover;">
+            <div style="padding: 16px;">
+              <h5 style="font-size: 0.9375rem; margin-bottom: 4px;">White-Label Tenant Mobile App</h5>
+              <p style="font-size: 0.8125rem; color: var(--color-text-secondary); margin-bottom: 0;">1-tap rent payment and AI repair video diagnostics.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Project Pagination Nav -->
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 56px; padding-top: 32px; border-top: 1px solid var(--color-border-subtle); flex-wrap: wrap; gap: 16px;">
+        <a href="portfolio.html" class="btn btn-secondary btn-sm">
+          <span>← Back to All Case Studies</span>
+        </a>
+        <a href="contact.html" class="btn btn-primary btn-sm">
+          <span>Book Custom Portfolio Audit →</span>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Global High-Converting CTA Banner
+       ======================================================================== -->
+  <section class="section" style="padding-top: 0;">
+    <div class="container">
+      <div style="background: linear-gradient(135deg, var(--color-primary) 0%, #1248B8 100%); border-radius: var(--radius-2xl); padding: 56px 40px; text-align: center; color: #FFFFFF; box-shadow: var(--shadow-glow); position: relative; overflow: hidden;">
+        <div class="badge-pill" style="background: rgba(255,255,255,0.2); border-color: rgba(255,255,255,0.3); color: #FFFFFF; margin-bottom: 20px;">
+          <span class="sparkle" style="color: #FFFFFF;">✦</span>
+          <span>Achieve Similar Results</span>
+        </div>
+        <h2 style="color: #FFFFFF; font-size: clamp(2rem, 3.5vw, 2.75rem); margin-bottom: 16px; font-weight: 800;">
+          Ready to Modernize Your <span class="serif-italic" style="color: #BAE6FD;">Multifamily Portfolio?</span>
+        </h2>
+        <p style="color: rgba(255,255,255,0.85); font-size: 1.1rem; max-width: 600px; margin: 0 auto 32px;">
+          Learn how PrimeStay can be tailored to your properties with zero data downtime.
+        </p>
+        <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
+          <a href="contact.html" class="btn btn-secondary btn-lg" style="background: #FFFFFF; color: var(--color-primary); border: none;">
+            <span>Schedule Strategy Consultation</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+          <a href="services.html" class="btn btn-secondary btn-lg" style="background: rgba(255,255,255,0.15); color: #FFFFFF; border: 1px solid rgba(255,255,255,0.4);">
+            <span>Explore Services</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Footer
+       ======================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo" style="color: #FFFFFF;">
+            <div class="logo-badge">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              </svg>
+            </div>
+            <span>PrimeStay</span>
+          </a>
+          <p>
+            The intelligent real estate CRM & property management ecosystem built for modern landlords, leasing teams, and property managers worldwide.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="social-link" aria-label="Twitter / X"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+            <a href="#" class="social-link" aria-label="LinkedIn"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.64 1.64 0 1 0 0-3.28 1.64 1.64 0 0 0 0 3.28m1.4 9.74V9.97H5.06v8.53h2.8z"/></svg></a>
+            <a href="#" class="social-link" aria-label="YouTube"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M10 15l5.19-3L10 9v6m11.56-7.83c.13.47.22 1.1.28 1.9.07.8.1 1.49.1 2.09L22 12c0 2.19-.16 3.8-.44 4.83-.25.9-.83 1.48-1.73 1.73-.47.13-1.33.22-2.65.28-1.3.07-2.49.1-3.59.1L12 5c4.19 0 6.8.16 7.83.44.9.25 1.48.83 1.73 1.73z"/></svg></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h5>Platform</h5>
+          <div class="footer-links">
+            <a href="services.html" class="footer-link">Rent Automation</a>
+            <a href="services.html" class="footer-link">Tenant Screening</a>
+            <a href="services.html" class="footer-link">AI Maintenance</a>
+            <a href="services.html" class="footer-link">Portfolio P&L</a>
+            <a href="services.html" class="footer-link">Resident Portal</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h5>Company</h5>
+          <div class="footer-links">
+            <a href="about.html" class="footer-link">About PrimeStay</a>
+            <a href="portfolio.html" class="footer-link">Case Studies</a>
+            <a href="portfolio-single.html" class="footer-link">Featured Story</a>
+            <a href="blog.html" class="footer-link">Blog & News</a>
+            <a href="contact.html" class="footer-link">Careers <span style="font-size: 0.7rem; color: #38BDF8; font-weight: 700;">WE'RE HIRING</span></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h5>Resources</h5>
+          <div class="footer-links">
+            <a href="services.html" class="footer-link">Feature Matrix</a>
+            <a href="blog-single.html" class="footer-link">Latest Research</a>
+            <a href="contact.html" class="footer-link">Help Center</a>
+            <a href="contact.html" class="footer-link">Security & SOC2</a>
+            <a href="contact.html" class="footer-link">Book Consultation</a>
+          </div>
+        </div>
+
+        <div class="footer-col footer-newsletter">
+          <h5>Stay Updated</h5>
+          <p>Get monthly property management strategies and market insights delivered to your inbox.</p>
+          <form class="newsletter-form" id="newsletterFormCaseSingle">
+            <input type="email" class="newsletter-input" placeholder="Your work email..." required>
+            <button type="submit" class="btn btn-primary btn-sm">Join</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 PrimeStay Technologies Inc. All rights reserved.</div>
+        <div style="display: flex; gap: 20px;">
+          <a href="#" class="footer-link">Privacy Policy</a>
+          <a href="#" class="footer-link">Terms of Service</a>
+          <a href="#" class="footer-link">Security Disclosures</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- Interactive JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>
