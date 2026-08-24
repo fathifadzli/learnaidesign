@@ -1,0 +1,38 @@
+# OS Generated Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE & Editor Files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+*.sublime-project
+*.sublime-workspace
+
+# Logs and Databases
+*.log
+*.sqlite
+
+# Environment Files
+.env
+.env.local
+.env.*.local
+
+# Dependency & Build Artifacts (if added in the future)
+node_modules/
+dist/
+build/
+.cache/
+.parcel-cache/
+
+# Agent / Tool Artifacts & Scratch files
+.gemini/
+scratch/
+tmp/
